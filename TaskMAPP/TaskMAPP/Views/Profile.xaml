@@ -25,12 +25,7 @@
                 <Label TextColor="#77d065" FontSize = "20" Text="Hiring Manager " />
             </StackLayout>
             
-            <Label Text="Department"/>
-            <BoxView HeightRequest="2" Color="#4D4A4A" />
-            <StackLayout Orientation="Horizontal">
-                <Image Source="it-department.png"  HeightRequest="10" WidthRequest="20"/>
-                <Label TextColor="#77d065" FontSize = "20" Text="Human Resources " />
-            </StackLayout>
+        
             
             <Label Text="Email Address"/>
             <BoxView HeightRequest="2" Color="#4D4A4A" />
