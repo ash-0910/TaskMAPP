@@ -13,9 +13,9 @@
             <Image  />
 
             <Label Text="Name"/>
-            <BoxView HeightRequest="1" Color="#00000" />
+            <BoxView HeightRequest="2" Color="#4D4A4A" />
             <StackLayout Orientation="Horizontal">
-                <Image Source="user.png"/>
+                <Image Source="user.png"  HeightRequest="10" WidthRequest="20"/>
                 <Label TextColor="#77d065" FontSize = "20" Text="Mr joseph " />
             </StackLayout>
             
