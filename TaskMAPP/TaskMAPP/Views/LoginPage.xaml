@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TaskMAPP.Views.LoginPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout Style="{StaticResource mainstack}" VerticalOptions="Center">
+
+            <Label 
+                Text="Welcome"
+                FontSize="30"
+                HorizontalOptions="CenterAndExpand"
+                Margin="0,0,0,20"
+                TextColor="DarkCyan"/>
+
+
+            <Entry 
+                    x:Name="EntryUserName"
+                    Placeholder="Username">
+            </Entry>
+            <Entry 
+                    x:Name="EntryPassword"
+                   Placeholder="Password" IsPassword="true">
+            </Entry>
+
+            <Button x:Name="SignInButton"
+               
+                    Text="Sign in"
+                    Clicked="SignInButton_Clicked"
+                    HeightRequest="54"
+                    BackgroundColor="DodgerBlue"/>
+
+            <Label 
+                    Text="Forgot Password?"
+                    HorizontalOptions="CenterAndExpand"
+                   
+                >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer x:Name="forgotpass"  Tapped="forgotpass_Tapped"
+                                      NumberOfTapsRequired="1">
+
+                    </TapGestureRecognizer>
+                </Label.GestureRecognizers>
+
+            </Label>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
