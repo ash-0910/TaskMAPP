@@ -9,7 +9,6 @@
             NavigationPage.HasBackButton="False"
             NavigationPage.HasNavigationBar="False">
     
-  
     <local:MainPage Title="Mainpage" />
     <views:Profile Title="Profile" />
     

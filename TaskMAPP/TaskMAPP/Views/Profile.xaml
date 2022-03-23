@@ -7,7 +7,7 @@
             <Label Text="this is the profile page"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-
+         
             <Button Text="sign out" Clicked="Button_Clicked" />
         </StackLayout>
     </ContentPage.Content>
