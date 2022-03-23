@@ -9,7 +9,6 @@
                 HorizontalOptions="CenterAndExpand" />
 
          
-
             <Image  />
 
             <Label Text="Name"/>
