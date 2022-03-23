@@ -8,8 +8,15 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <Image  />
+
+            <Label Text="Name"/>
+            <BoxView HeightRequest="1" Color="#00000" />
+            <StackLayout Orientation="Horizontal">
+                <Image Source="user.png"/>
+                <Label TextColor="#77d065" FontSize = "20" Text="Mr joseph " />
+            </StackLayout>
             
-            <Label TextColor="#77d065" FontSize = "20" Text="Name = Mr. Joseph" />
+          
             <Label TextColor="#77d065" FontSize = "20" Text="Position = Hiring Manager" />
             <Label TextColor="#77d065" FontSize = "20" Text="Department= Human Resources" />
             <Label TextColor="#77d065" FontSize = "20" Text="Email Address= Joseph345@gmail.com" />
