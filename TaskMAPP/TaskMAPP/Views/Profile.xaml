@@ -19,10 +19,28 @@
                 <Label TextColor="#77d065" FontSize = "20" Text="Mr joseph " />
             </StackLayout>
             
-          
-            <Label TextColor="#77d065" FontSize = "20" Text="Position = Hiring Manager" />
-            <Label TextColor="#77d065" FontSize = "20" Text="Department= Human Resources" />
-            <Label TextColor="#77d065" FontSize = "20" Text="Email Address= Joseph345@gmail.com" />
+            <Label Text="Position"/>
+            <BoxView HeightRequest="2" Color="#4D4A4A" />
+            <StackLayout Orientation="Horizontal">
+                <Image Source="suitcase.png"  HeightRequest="10" WidthRequest="20"/>
+                <Label TextColor="#77d065" FontSize = "20" Text="Hiring Manager " />
+            </StackLayout>
+            
+            <Label Text="Department"/>
+            <BoxView HeightRequest="2" Color="#4D4A4A" />
+            <StackLayout Orientation="Horizontal">
+                <Image Source="it-department.png"  HeightRequest="10" WidthRequest="20"/>
+                <Label TextColor="#77d065" FontSize = "20" Text="Human Resources " />
+            </StackLayout>
+            
+            <Label Text="Email Address"/>
+            <BoxView HeightRequest="2" Color="#4D4A4A" />
+            <StackLayout Orientation="Horizontal">
+                <Image Source="email.png"  HeightRequest="10" WidthRequest="20"/>
+                <Label TextColor="#77d065" FontSize = "20" Text="joseph234@gmail.com " />
+            </StackLayout>
+            
+
 
             <Button Text="sign out" Clicked="Button_Clicked" />
         </StackLayout>
