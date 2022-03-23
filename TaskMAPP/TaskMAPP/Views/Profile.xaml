@@ -8,6 +8,15 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
+         
+
+            <Image  />
+            
+            <Label TextColor="#77d065" FontSize = "20" Text="Name = Mr. Joseph" />
+            <Label TextColor="#77d065" FontSize = "20" Text="Position = Hiring Manager" />
+            <Label TextColor="#77d065" FontSize = "20" Text="Department= Human Resources" />
+            <Label TextColor="#77d065" FontSize = "20" Text="Email Address= Joseph345@gmail.com" />
+
             <Button Text="sign out" Clicked="Button_Clicked" />
         </StackLayout>
     </ContentPage.Content>
