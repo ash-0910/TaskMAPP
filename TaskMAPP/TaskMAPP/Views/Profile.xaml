@@ -4,38 +4,34 @@
              x:Class="TaskMAPP.Views.Profile">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="this is the profile page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+          
+            <Image Source="photo.png"  HeightRequest="130" WidthRequest="190"  VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"/>
 
-         
-            <Image  />
-
+      
             <Label Text="Name"/>
             <BoxView HeightRequest="2" Color="#4D4A4A" />
-            <StackLayout Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal"
+                         VerticalOptions="Start">
                 <Image Source="user.png"  HeightRequest="10" WidthRequest="20"/>
                 <Label TextColor="#77d065" FontSize = "20" Text="Mr joseph " />
             </StackLayout>
             
             <Label Text="Position"/>
             <BoxView HeightRequest="2" Color="#4D4A4A" />
-            <StackLayout Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal"
+                         VerticalOptions="Start">
                 <Image Source="suitcase.png"  HeightRequest="10" WidthRequest="20"/>
                 <Label TextColor="#77d065" FontSize = "20" Text="Hiring Manager " />
             </StackLayout>
-            <Label Text="Department"/>
-            <BoxView HeightRequest="2" Color="#4D4A4A" />
-            <StackLayout Orientation="Horizontal">
-                <Image Source="it-department.png"  HeightRequest="10" WidthRequest="20"/>
-                <Label TextColor="#77d065" FontSize = "20" Text="Human Resources " />
-            </StackLayout>
+           
             
         
             
             <Label Text="Email Address"/>
             <BoxView HeightRequest="2" Color="#4D4A4A" />
-            <StackLayout Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal"
+                         VerticalOptions="StartAndExpand">
                 <Image Source="email.png"  HeightRequest="10" WidthRequest="20"/>
                 <Label TextColor="#77d065" FontSize = "20" Text="joseph234@gmail.com " />
             </StackLayout>
