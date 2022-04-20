@@ -20,8 +20,7 @@ namespace TaskMAPP.Views
 
         private void forgotpass_Tapped(object sender, EventArgs e)
         {
-            
-
+            Navigation.PushAsync(new NavigationPage(new ForgotPassword()));
         }
 
         private async void SignInButton_Clicked(object sender, EventArgs e)
