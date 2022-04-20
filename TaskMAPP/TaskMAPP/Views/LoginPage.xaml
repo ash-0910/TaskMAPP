@@ -15,8 +15,8 @@
 
 
             <Entry 
-                    x:Name="EntryUserName"
-                    Placeholder="Username">
+                    x:Name="EntryUserEmail"
+                    Placeholder="Email">
             </Entry>
             <Entry 
                     x:Name="EntryPassword"
