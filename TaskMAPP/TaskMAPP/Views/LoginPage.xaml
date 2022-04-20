@@ -30,7 +30,7 @@
                     HeightRequest="54"
                     BackgroundColor="DodgerBlue"/>
 
-            <Label 
+            <Label Margin="0,20,0,0"
                     Text="Forgot Password?"
                     HorizontalOptions="CenterAndExpand"
                    
