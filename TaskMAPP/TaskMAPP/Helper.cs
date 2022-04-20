@@ -1,8 +1,11 @@
 ﻿using Firebase.Auth;
+using Firebase.Database;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using TaskMAPP.Model;
+using System.Linq;
 
 namespace TaskMAPP
 {
@@ -10,7 +13,10 @@ namespace TaskMAPP
     {
         FirebaseAuthProvider auth = new FirebaseAuthProvider(new Firebase.Auth.FirebaseConfig("AIzaSyAdIYhrybYn6uOm-2umGJYPw_on9zbrthU"));
 
+        
         bool result;
+
+        FirebaseClient firebaseDatabase = new FirebaseClient("https://finalproject-4e52e-default-rtdb.firebaseio.com");
 
 
         public async Task<bool> FirebaseLogin(string email, string password)
@@ -55,6 +61,19 @@ namespace TaskMAPP
             }
 
             return result;
+
+        }
+
+        public async Task<List<Tasks>> GetAllTask()
+        {
+            var response =  (await firebaseDatabase.Child("Tasks").OnceAsync<Tasks>()).Select(item => new Tasks()
+            {
+                Email = item.Object.Email,
+                TaskName = item.Object.TaskName
+
+            }).ToList();
+
+            return response;
 
         }
     }

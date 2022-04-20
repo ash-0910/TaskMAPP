@@ -3,8 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TaskMAPP.MainPage">
 
-    <StackLayout>
-        <Label Text="This is a list of task" HorizontalOptions="CenterAndExpand"/>
-    </StackLayout>
+
+    <ListView x:Name="tasklistview" HasUnevenRows="True">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout>
+                        <Label Text="Task" FontSize="Medium"/>
+                        <Label Text="{Binding Email}" FontSize="Medium"/>
+                        <Label Text="{Binding TaskName}" FontSize="Medium"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
 
 </ContentPage>
